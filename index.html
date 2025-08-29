@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHashlik House - Zamonaviy Restoran</title>
+    <meta name="description" content="Fayz restorani - ajoyib taomlar va xizmatlar">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="logo-animation">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <h2>SHashlik House Xush kelibsiz</h2>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-animation">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <span>SHashlik House</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Bosh sahifa</a></li>
+                    <li><a href="#menu" class="nav-link">Menyu</a></li>
+                    <li><a href="#order" class="nav-link">Buyurtma</a></li>
+                    <li><a href="#reservation" class="nav-link">Bron qilish</a></li>
+                    <li><a href="#about" class="nav-link">Haqida</a></li>
+                    <li><a href="#gallery" class="nav-link">Galereya</a></li>
+                    <li><a href="#location" class="nav-link">Manzil</a></li>
+                    <li><a href="#contact" class="nav-link">Aloqa</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <div class="theme-switcher">
+                        <div class="theme-current">
+                            <i class="fas fa-sun"></i>
+                            <span class="theme-name">Yorug' rejim</span>
+                        </div>
+                        <div class="theme-dropdown">
+                            <div class="theme-option" data-theme="light">
+                                <i class="fas fa-sun"></i>
+                                <span class="theme-name">Yorug' rejim</span>
+                            </div>
+                            <div class="theme-option" data-theme="dark">
+                                <i class="fas fa-moon"></i>
+                                <span class="theme-name">Qorong'i rejim</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slides">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 data-aos="fade-up">SHashlik House</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">Ajoyib taomlar va nozik ovqatlanish tajribasi</p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#menu" class="btn btn-primary">Menyuni ko'rish</a>
+                        <a href="#reservation" class="btn btn-secondary">Stol bron qilish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Bizning Menyu</h2>
+                <p>Har bir ta'm uchun diqqat bilan tayyorlangan taomlar</p>
+            </div>
+            
+            <div class="menu-tabs" data-aos="fade-up" data-aos-delay="200">
+                <button class="menu-tab active" data-category="meals">Oziq-ovqat</button>
+                <button class="menu-tab" data-category="drinks">Ichimliklar</button>
+                <button class="menu-tab" data-category="desserts">Shirinliklar</button>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Meals Category -->
+                <div class="menu-category active" data-category="meals">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/1200x/a7/50/48/a75048c1eaf9c07ad34d8052631ea379.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/1200x/a7/50/48/a75048c1eaf9c07ad34d8052631ea379.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/736x/0c/a7/05/0ca70539442753a7f06e607079d58663.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/736x/0c/a7/05/0ca70539442753a7f06e607079d58663.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/1200x/75/25/c2/7525c28b815e93b8f4ad4a3bb889090e.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/1200x/75/25/c2/7525c28b815e93b8f4ad4a3bb889090e.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/736x/7c/d6/bf/7cd6bf5f187b82d2c0ee6a0cce2c2d38.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Shashlik</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/736x/7c/d6/bf/7cd6bf5f187b82d2c0ee6a0cce2c2d38.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/736x/57/58/8b/57588b32c55b721df9710bfe1093fe1f.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/736x/57/58/8b/57588b32c55b721df9710bfe1093fe1f.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/736x/64/10/28/6410280ea008a6ca9e706e15cd288860.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/736x/64/10/28/6410280ea008a6ca9e706e15cd288860.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                          <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/1200x/2d/fc/d4/2dfcd4d7b11f315c5f6b08b72eee2cde.jpg" alt="Plov">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Osh</h3>
+                            <p>An'anaviy o'zbek oshi, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">25,000 so'm</span>
+                                <button class="btn-add" data-item="Osh" data-price="25000" data-image="https://i.pinimg.com/1200x/2d/fc/d4/2dfcd4d7b11f315c5f6b08b72eee2cde.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/1200x/78/52/9c/78529c11bfba7bf89f7c1c3c616b5b00.jpg" alt="Lagman">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Lagman</h3>
+                            <p>Xitoycha lagman, go'sht va sabzavotlar bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">30,000 so'm</span>
+                                <button class="btn-add" data-item="Lagman" data-price="30000" data-image="https://i.pinimg.com/1200x/78/52/9c/78529c11bfba7bf89f7c1c3c616b5b00.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="menu-item-image">
+                            <img src="https://i.pinimg.com/1200x/2b/e2/95/2be295161611268a0109b73343e4a02e.jpg" alt="Somsa">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Somsa</h3>
+                            <p>Issiq somsa, go'sht yoki sabzavot bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">8,000 so'm</span>
+                                <button class="btn-add" data-item="Somsa" data-price="8000" data-image="https://i.pinimg.com/1200x/2b/e2/95/2be295161611268a0109b73343e4a02e.jpg">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drinks Category -->
+                <div class="menu-category" data-category="drinks">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://healthy-food-near-me.com/wp-content/uploads/2022/09/tea-with-lemon-benefits-and-harms.webp" alt="Choy">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Yashil choy</h3>
+                            <p>Tabiiy yashil choy, limon bilan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">5,000 so'm</span>
+                                <button class="btn-add" data-item="Yashil choy" data-price="5000" data-image="https://images.unsplash.com/photo-1546173159-315724a31696?w=400">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="menu-item-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF16Px4UUt0n_Li_0QmBeO93jQCy342ou__g&s" alt="Kofe">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Kofe</h3>
+                            <p>Qora kofe, sut yoki qora</p>
+                            <div class="menu-item-footer">
+                                <span class="price">12,000 so'm</span>
+                                <button class="btn-add" data-item="Kofe" data-price="12000" data-image="https://images.unsplash.com/photo-1546173159-315724a31696?w=400">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desserts Category -->
+                <div class="menu-category" data-category="desserts">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565958011703-44f98229baae?w=400" alt="Halva">
+                        </div>
+                        <div class="menu-item-content">
+                            <h3>Halva</h3>
+                            <p>An'anaviy o'zbek halvasi</p>
+                            <div class="menu-item-footer">
+                                <span class="price">15,000 so'm</span>
+                                <button class="btn-add" data-item="Halva" data-price="15000" data-image="https://images.unsplash.com/photo-1565958011703-44f98229baae?w=400">Qo'shish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Sizning buyurtmangiz</h2>
+                <p>Tanlangan taomlaringizni ko'ring va buyurtma bering</p>
+            </div>
+            
+            <div class="order-container">
+                <div class="order-items" data-aos="fade-up" data-aos-delay="200">
+                    <div class="order-empty">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Sizning savat bo'sh</p>
+                        <span>Menyudan taom tanlang</span>
+                    </div>
+                </div>
+                
+                <div class="order-summary" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Buyurtma xulosasi</h3>
+                    <div class="order-total">
+                        <span>Jami:</span>
+                        <span class="total-amount">0 so'm</span>
+                    </div>
+                    <button class="btn btn-primary btn-order" disabled>Buyurtma berish</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Stol bron qilish</h2>
+                <p>O'zingizga mos vaqt va stolni tanlang</p>
+            </div>
+            
+            <div class="reservation-container">
+                <div class="reservation-form" data-aos="fade-up" data-aos-delay="200">
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Ism</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Sana</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Vaqt</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Mehmonlar soni</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Tanlang</option>
+                                <option value="1">1 kishi</option>
+                                <option value="2">2 kishi</option>
+                                <option value="3">3 kishi</option>
+                                <option value="4">4 kishi</option>
+                                <option value="5">5 kishi</option>
+                                <option value="6+">6+ kishi</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="table">Stol raqami</label>
+                            <select id="table" name="table" required>
+                                <option value="">Tanlang</option>
+                                <option value="1">Stol 1 (2 o'rin)</option>
+                                <option value="2">Stol 2 (4 o'rin)</option>
+                                <option value="3">Stol 3 (6 o'rin)</option>
+                                <option value="4">Stol 4 (8 o'rin)</option>
+                                <option value="5">Stol 5 (VIP)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Bron qilish</button>
+                    </form>
+                </div>
+                
+                <div class="reservation-info" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Bron ma'lumotlari</h3>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Ish vaqti</h4>
+                            <p>Dushanba - Yakshanba: 09:00 - 23:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Manzil</h4>
+                            <p>Samarqand shahri, Ishtxon tumani</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>SHashlik House</h2>
+                    <p>SHashlik House 2010-yilda tashkil topgan bo'lib, o'zbek milliy taomlarini zamonaviy uslubda taqdim etadi. Bizning oshpazlarimiz an'anaviy retseptlarni zamonaviy texnikalar bilan birlashtirib, har bir taomni san'at asari darajasiga ko'taradi.</p>
+                    <p>Restoranimizda siz nafaqat ajoyib taomlar, balki qulay muhit va yuqori darajadagi xizmatni ham topasiz. Har bir mehmonimiz bizning oila a'zolarimizdir.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">13</span>
+                            <span class="stat-label">Yillik tajriba</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Mamnun mijoz</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Taomlar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Fayz restorani">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Galereya</h2>
+                <p>Restoranimizning go'zal interyeri va ajoyib taomlari</p>
+            </div>
+            
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="https://amazingarchitecture.com/storage/files/1742/architecture-projects/utro/new-israeli-dizengof99-tashkent/new-israeli-dizengof99-tashkent-utro-15.jpg" alt="Restoran interyeri">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://mindtrip.ai/cdn-cgi/image/w%3D640%2Cformat%3Dwebp%2Ch%3D640%2Cfit%3Dcover/https%3A//iorigin.mindtrip.ai/restaurants/2a1d/05a4/53fb/0a14/2a64/b138/5243/366a" alt="Taomlar">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://mindtrip.ai/cdn-cgi/image/w%3D640%2Cformat%3Dwebp%2Ch%3D640%2Cfit%3Dcover/https%3A//tcdn.mindtrip.ai/images/314712/119in28.png" alt="Ichimliklar">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/48/8e/6e/a-cafe.jpg?h=-1&s=1&w=900" alt="Shirinliklar">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://avatars.mds.yandex.net/get-altay/14763246/2a000001964d371c024a1340df6386a6aea9/L_height" alt="Restoran">
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://amazingarchitecture.com/storage/files/1742/architecture-projects/utro/new-israeli-dizengof99-tashkent/new-israeli-dizengof99-tashkent-utro-15.jpg" alt="Taom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Manzil</h2>
+                <p>Bizni topish uchun xaritani ko'ring</p>
+            </div>
+            
+            <div class="location-container">
+                <div class="location-info" data-aos="fade-right">
+                    <h3>Bizning manzil</h3>
+                    <div class="location-details">
+                        <div class="location-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Manzil</h4>
+                                <p>Samarqand shahri, Ishtxon,  ko'chasi, 15-uy</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefon</h4>
+                                <p>+998 90 123 45 67</p>
+                            </div>
+                        </div>
+                        <div class="location-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Ish vaqti</h4>
+                                <p>Dushanba - Yakshanba: 09:00 - 23:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-map" data-aos="fade-left">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50264770762!2d69.1392822!3d41.2994958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1645000000000!5m2!1sen!2s" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Aloqa</h2>
+                <p>Biz bilan bog'laning</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Ism</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message">Xabar</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Yuborish</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Aloqa ma'lumotlari</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@fayz.uz</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Manzil</h4>
+                            <p>Samarqand , Ishtxon tumani</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>SHashlik House</span>
+                    </div>
+                    <p>Zamonaviy restoran, an'anaviy ta'mlar</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tezkor havolalar</h3>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#menu">Menyu</a></li>
+                        <li><a href="#about">Haqida</a></li>
+                        <li><a href="#contact">Aloqa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Xizmatlar</h3>
+                    <ul>
+                        <li><a href="#reservation">Stol bron qilish</a></li>
+                        <li><a href="#order">Buyurtma berish</a></li>
+                        <li><a href="#gallery">Galereya</a></li>
+                        <li><a href="#location">Manzil</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Axborot byulleteni</h3>
+                    <p>Yangiliklar va maxsus takliflar uchun obuna bo'ling</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email manzilingiz" required>
+                        <button type="submit">Obuna bo'lish</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SHashlik House. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="/js/translations.js"></script>
+    <script src="/js/language.js"></script> -->
+    <script src="/js/theme.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/oreder.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="/js/contact.js"></script>
+
+</body>
+</html>
